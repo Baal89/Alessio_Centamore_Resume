@@ -1,0 +1,59 @@
+.bg-image {
+    background-image: url(../media/resume_project.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+}
+
+.heading-container {
+    min-height: 50%;
+}
+
+.main-header {
+    padding-top: 20px;
+}
+
+.header { 
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.download {
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.download:hover {
+    color: #df3143;
+    background-color: #fff;
+    text-decoration: none;
+    border: 1px solid #df3143;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #94a3ba;
+}
