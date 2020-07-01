@@ -1,19 +1,20 @@
+/* --------------------------------------------------------------------header */
+
+header {
+    height: 643px;
+}
+
 .bg-image {
     background-image: url(../media/resume_project.jpg);
     background-size: cover;
     background-position: center center;
-    height: 700px;
-}
-
-.heading-container {
-    min-height: 50%;
 }
 
 .main-header {
     padding-top: 20px;
 }
 
-.header { 
+.sub-header { 
   background-color: rgba(0,0,0, 0.4);
   color: white;
   font-weight: bold;
@@ -56,4 +57,110 @@
 
 .nav-link:hover {
     color: #94a3ba;
+}
+
+/* -----------------------------------------------------------------main section */
+
+.main-section {
+    min-height: 643px;
+    background-color: #fff;
+    padding-top: 150px;
+}
+
+.profile-image {
+    background-image: url(../media/profile_image.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  color: #94a3ba !important;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+  margin-top: 50px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.border {
+    width: 10%;
+    border: 3px solid #df3143 !important;
+}
+
+.sub-heading {
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    
+}
+
+.sub-heading h3 {
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.social span i {
+    font-size: 40px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black; 
 }

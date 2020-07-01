@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css" type="text/css"/>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/609714b29a.js" crossorigin="anonymous"></script>
 
     <title>Alessio Centamore Resume</title>
   </head>
@@ -20,21 +20,87 @@
     <div class="container-fluid main-container px-0">
         <div class="bg-image">
 
-            <div class="container-fluid heading-container ">
-                <nav class="nav main-header sticky-top d-flex align-items-center">
-                    <div class="col-6"> 
-                        <a class="nav-link" href="index.html">Home</a>
+            <header>
+                <div class="container-fluid">
+                    <nav class="nav main-header sticky-top d-flex align-items-center">
+                        <div class="col-6"> 
+                            <a class="nav-link" href="index.html">Home</a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a role="button" href="#" class="download">Download my full Resume</a>
+                        </div>
+                    </nav>
+                    <div class="sub-header text-center">
+                        <h1>Alessio Centamore</h1>
+                        <h2>Full Stack Developer</h2>
                     </div>
-                    <div class="col-6 text-right">
-                        <a role="button" href="#" class="download">Download my full Resume</a>
-                    </div>
-                </nav>
-                <div class="header text-center">
-                    <h1>Alessio Centamore</h1>
-                    <h2>Full Stack Developer</h2>
                 </div>
-            </div>
+            </header>
+
+            <section>
+                <div class="main-section container-fluid px-0">
+                    <div class="profile-image">
+                    
+                    </div>
+                    <div class="container-fluid details px-0">
+                        <div class="slideshow-container">
+
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="row sub-heading">
+                                    <div class="col-12 col-md-6">
+                                        <h3>About Me</h3>
+                                        <div class="border"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 social">
+                                        <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+                                        <a href="#"><span><i class="fab fa-linkedin"></i></span></a>
+                                        <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                                <p class="author">- Ernest Hemingway</p>
+                            </div>
+
+                            <div class="mySlides">
+                                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                                <p class="author">- Thomas A. Edison</p>
+                            </div>
+                        </div>
+
+                        
+                        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+                        <a class="next" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
+    <script src="static/js/resume.js"></script>
   </body>
+  
 </html>
