@@ -8,6 +8,7 @@ header {
     background-image: url(../media/resume_project.jpg);
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 .main-header {
@@ -305,4 +306,33 @@ header {
 #game,
 #cooking {
     padding-left: 40px;
+}
+
+/*--------------------------------------------------------------- article */
+
+.bg {
+    height: 643px;
+}
+
+.skills {
+    height: 643px;
+    background-color: #fff;
+}
+
+/*--------------------------------------------------------------- skills */
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 10px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    font-size: 16px;
 }
