@@ -1,7 +1,7 @@
 /* --------------------------------------------------------------------header */
 
 header {
-    height: 643px;
+    height: 600px;
 }
 
 .bg-image {
@@ -79,7 +79,7 @@ header {
     width: 250px;
     border-radius: 50%;
     border: 10px solid #fff;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -308,7 +308,7 @@ header {
     padding-left: 40px;
 }
 
-/*--------------------------------------------------------------- article */
+/*--------------------------------------------------------------- skills */
 
 .bg {
     height: 643px;
@@ -319,7 +319,6 @@ header {
     background-color: #fff;
 }
 
-/*--------------------------------------------------------------- skills */
 
 .progress {
     position: relative;
@@ -335,4 +334,19 @@ header {
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
     font-size: 16px;
+}
+
+/*--------------------------------------------------------------- info and contact */
+.test1 {
+    position: relative;
+    height: 643px;
+    background-color: #2e4975;
+}
+
+.info {
+    position: relative;
+}
+
+.form {
+    background-color: #bbc8dd;
 }
