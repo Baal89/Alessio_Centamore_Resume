@@ -395,6 +395,28 @@ header {
     color: #888
 }
 
-footer {
-    height: 200px;
+.contact-header {
+    margin-left: 15px;
+}
+
+/*--------------------------------------------------------------- footer */
+
+.footer-links {
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.download-button {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 150px;
+    transition: all .5s;
+}
+
+.download-button:hover {
+    text-decoration: none;
+    color: #df3143;
+    border: 1px solid #df3143;
 }
