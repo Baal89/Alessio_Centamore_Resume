@@ -159,7 +159,7 @@ header {
 .sub-heading h3 {
     font-weight: bold;
     font-size: 35px;
-    letter-spacing: 4px;
+    letter-spacing: 3.8px;
 }
 
 .social span i {
@@ -169,7 +169,7 @@ header {
     color: black; 
 }
 
-/* -----------------------------------------------------------education and jobs */
+/* -------------------------------------------------------education and jobs */
 
 .slide-container {
     padding-top: 120px;
@@ -337,16 +337,64 @@ header {
 }
 
 /*--------------------------------------------------------------- info and contact */
-.test1 {
-    position: relative;
-    height: 643px;
+
+.information {
+    height: 543px;
+}
+
+.info-container {
     background-color: #2e4975;
 }
 
-.info {
-    position: relative;
+.contact-container {
+    background-color: #bbc8dd;
 }
 
-.form {
+.info {
+    left: 55%;
+    padding-top:100px;
+    color: #fff;
+}
+
+.info th,
+.info td {
+    padding-bottom: 20px;
+}
+
+.info td {
+    padding-left: 25px;
+}
+
+.contact {
+    padding-top: 100px;
+}
+
+.form-control {
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #79757d;
+    border-radius: 0;
+}
+
+.form-control:hover {
+    background-color: #fff;
+    border: 1px solid #79757d
+}
+
+.button {
     background-color: #bbc8dd;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    transition: all 1s;
+}
+
+.button:hover {
+    color: #888
+}
+
+footer {
+    height: 200px;
 }
