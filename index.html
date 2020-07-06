@@ -22,14 +22,26 @@
 
             <header>
                 <div class="container-fluid">
-                    <nav class="nav main-header sticky-top d-flex align-items-center">
-                        <div class="col-6"> 
-                            <a class="nav-link" href="index.html">Home</a>
+                    <div class="row d-flex align-items-center fixed-top">
+                        <div class="col-12 col-md-6">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
                         </div>
-                        <div class="col-6 text-right">
-                            <a role="button" href="#" class="download">Download my full Resume</a>
+                        <div class="col-12 col-md-6">
+                            <a role="button" class="download">Download my full Resume</a>
                         </div>
-                    </nav>
+                    </div>
                     <div class="sub-header text-center">
                         <h1>Alessio Centamore</h1>
                         <h2>Full Stack Developer</h2>
@@ -81,7 +93,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="timeline col-12 time">
+                                    <div class="timeline col-12">
                                         <ol>
                                             <li>
                                                 <div>
@@ -137,9 +149,6 @@
                                 </div>
                             </div>
 
-<!-- I do not know if this approach here  it is the most efficient way to do this, but has been impossible for me add the header in the same column of the span 
-without ruin the flow of the page -->
-
                             <div class="mySlides">
                                 <div class="row sub-heading">
                                     <div class="col-12 col-md-6">
@@ -147,27 +156,29 @@ without ruin the flow of the page -->
                                         <div class="border"></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6 col-md-12 hobbies">
-                                        <span><i class="fas fa-film"></i></span>
-                                        <span><i class="fas fa-dumbbell"></i></span>
-                                        <span><i class="fas fa-theater-masks"></i></span>
-                                        <span><i class="fas fa-gamepad"></i></span>
-                                        <span><i class="fas fa-headphones"></i></span>
-                                        <span><i class="fas fa-hamburger"></i></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 hobbies-header">
-                                        <h5>Movies</h5>
-                                        <h5 id="gym">Gym</h5>
-                                        <h5 id="theatre">Theatre</h5>
-                                        <h5 id="game">Game</h5>
-                                        <h5 id="music">Music</h5>
-                                        <h5 id="cooking">Cooking</h5>
-                                    </div>
-                                </div>
-                            </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"><span><i class="fas fa-film"></i></span></th>
+                                            <th scope="col"><span><i class="fas fa-dumbbell"></i></span></th>
+                                            <th scope="col"><span><i class="fas fa-theater-masks"></i></span></th>
+                                            <th scope="col"><span><i class="fas fa-gamepad"></i></span></th>
+                                            <th scope="col"><span><i class="fas fa-headphones"></i></span></th>
+                                            <th scope="col"><span><i class="fas fa-hamburger"></i></span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Movies</td>
+                                            <td>Gym</td>
+                                            <td>Theatre</td>
+                                            <td>Game</td>
+                                            <td>Music</td>
+                                            <td>Cooking</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>        
                         </div>
 
                         
