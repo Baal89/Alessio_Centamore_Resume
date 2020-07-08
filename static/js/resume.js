@@ -1,3 +1,4 @@
+//carousel
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -15,8 +16,8 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex = 1};
+  if (n < 1) {slideIndex = slides.length};
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
@@ -25,4 +26,13 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+//scroll back to the top
+
+mybutton = document.getElementById("myBtn");
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

@@ -49,6 +49,10 @@ header {
     border: 1px solid #df3143;
 }
 
+#myBtn {
+    cursor: pointer;
+}
+
 .nav-link {
     color: #fff;
     font-size: 22px;
