@@ -83,6 +83,21 @@ header {
     padding-right: 15px;
 }
 
+.scroll {
+    color: black !important;
+}
+
+.scroll-resume {
+    color: black !important;
+    border: 1px solid black;
+
+}
+
+.scroll-resume:hover {
+    color: black !important;
+    border: 1px solid black;
+}
+
 
 /* -----------------------------------------------------------------main section */
 
@@ -450,3 +465,4 @@ header {
     color: #df3143;
     border: 1px solid #df3143;
 }
+

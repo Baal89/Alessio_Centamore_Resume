@@ -29,10 +29,42 @@ function showSlides(n) {
 }
 
 //scroll back to the top
-
 mybutton = document.getElementById("myBtn");
 
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//jQuery to change the color of the navbar on scroll. In this case I preferred jQuery as it works with all the browsers and is less verbose
+var myNav = $("#myBtn");
+var myResume = $("#myResume")
+
+$(window).on('scroll', function() {
+  if ($(window).scrollTop() >= 643 && $(window).scrollTop() < 1286 || $(window).scrollTop() > 1929)  {
+    myNav.addClass("scroll");
+    myResume.addClass("scroll-resume")
+  } else {
+    myNav.removeClass("scroll");
+    myResume.removeClass("scroll-resume")
+  }
+});
+
+$('contact-form').on('submit',function(event){
+  event.preventDefault()
+  var name = $('#name').val();
+  if(name == ""){
+    alert('error message');
+    return false;
+  }else{
+    $.ajax({
+        type:'post',
+        url:'testmodal.php',
+        data:$('contact-form').serialize(),
+        success: function(response){
+            $('#myModal').modal('show');
+            $('#modal-div').html(response);
+        }
+    });
+  }
+});
