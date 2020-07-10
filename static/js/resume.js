@@ -50,21 +50,14 @@ $(window).on('scroll', function() {
   }
 });
 
-$('contact-form').on('submit',function(event){
+// stack everflow code - I needed this to prevent the modal to appear on empty form
+$('#form').on('submit',function(event){
   event.preventDefault()
   var name = $('#name').val();
-  if(name == ""){
-    alert('error message');
+  if(name == "" && email == "" && subject == "" && projectsummary == "") {
     return false;
   }else{
-    $.ajax({
-        type:'post',
-        url:'testmodal.php',
-        data:$('contact-form').serialize(),
-        success: function(response){
-            $('#myModal').modal('show');
-            $('#modal-div').html(response);
+    $('#myModal').modal('show');
         }
     });
-  }
-});
+  
