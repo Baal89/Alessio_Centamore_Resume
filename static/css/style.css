@@ -98,6 +98,43 @@ header {
     border: 1px solid black;
 }
 
+@media only screen and (max-width: 600px) {
+  .sub-header {
+    position: relative;
+    z-index: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0) ;
+    transform: translate(-50%, -140%);
+  }
+  .sub-header h1,
+  .sub-header h2 {
+      font-size: 15px;
+  }
+  .download {
+      position: relative;
+      z-index: 0;
+      float: none;
+  }
+  .donwnload-container {
+      text-align: center;
+      margin-top: 80px;
+  }
+  .about-me {
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+   .bg {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+    .arrow {
+      display: none !important;
+  }
+}
 
 /* -----------------------------------------------------------------main section */
 
@@ -202,6 +239,35 @@ header {
 .fade:not(.show) {
     opacity: 1; 
 }
+
+@media only screen and (max-width: 900px) {
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        top: 47%;
+  }
+  .sub-heading h3 {
+      text-align: center;
+  }
+  .border {
+      display: none;
+  }
+  
+}
+
+@media only screen and (max-width: 360px) {
+    .profile-image {
+        top: 55%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .prev,
+    .next {
+        display: none;
+  }
+}
+
 /* -----------------------------------------------------------------about me */
 
 
@@ -227,6 +293,14 @@ header {
     padding-left: 20px;
     text-decoration: none;
     color: black; 
+}
+
+@media only screen and (max-width: 900px) {
+  #about-social {
+      position: absolute;
+      top: 90%;
+      text-align: center;
+  }
 }
 
 /* -------------------------------------------------------education and jobs */
@@ -324,13 +398,72 @@ header {
   margin-bottom: 8px;
 }
 
-/* -----------------------------------------------------------interests*/
 
-.table {
-    margin-top: 60px;
+
+@media screen and (max-width: 900px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto; 
+  }
+  
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+  
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+  
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+  
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+  
+  .timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+  
+  .timeline ol li div {
+    position: static;
+  }
+  
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+  
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid white;
+    height: 25px;
+  }
+  
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
 }
 
-.table span {
+/* -----------------------------------------------------------interests*/
+
+.hobbies {
+    padding-top: 60px;
+}
+
+.hobbies span {
     border-radius: 50%;
     background-color:  #94a3ba;
     padding: 50px;
@@ -339,18 +472,43 @@ header {
     z-index: 2
 }
 
-.table span i {
+.hobbies span i {
     font-size: 30px;
     color: #fff;
 }
 
-.table span:hover {
+.hobbies span:hover {
     background-color: #212529;
 }
 
-.table td {
-    padding-top: 50px;
-    padding-left: 75px;
+.hobbies-header {
+    margin-top: 60px
+}
+
+.interests {
+    padding-left: 65px;
+}
+
+.hobbies-header h5 {
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+}
+ 
+
+@media screen and (max-width: 900px) {
+    .hobbies span {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hobbies span {
+        padding: 35px;
+    }
+    .hobbies-header {
+        display: none;
+    }
 }
 
 /*--------------------------------------------------------------- skills */
@@ -379,6 +537,12 @@ header {
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
     font-size: 16px;
+}
+
+@media screen and (max-width: 900px ) {
+    .progress-type {
+        font-size: 14px;
+    }
 }
 
 /*--------------------------------------------------------------- info and contact */
@@ -444,6 +608,36 @@ header {
     margin-left: 15px;
 }
 
+@media screen and (max-width: 900px ) {
+    .info {
+        left: 0%;
+        padding-top: 75px;
+        padding-bottom: 30px;
+    }
+    .info th {
+        padding-left: 50px;
+    }
+    .information {
+        height: auto !important;
+    }
+    .contact {
+        padding-top: 75px;
+        padding-bottom: 50px;
+    }
+    .form-control {
+        margin-bottom: 15px;
+    }
+    .contact-header {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .info {
+        left: 0;
+    }
+}
+
 /*--------------------------------------------------------------- footer */
 
 .footer-links {
@@ -466,3 +660,28 @@ header {
     border: 1px solid #df3143;
 }
 
+#copyright {
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .download-button {
+        padding: 10px 50px;
+    }
+    .download-button-container {
+        text-align: center;
+    }
+    #bottom-social {
+        text-align: center;
+        padding-top: 30px;
+    }
+    .follow {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .download-button {
+        padding: 10px 75px;
+    }
+}

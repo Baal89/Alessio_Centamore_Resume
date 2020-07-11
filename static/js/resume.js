@@ -61,3 +61,6 @@ $('#form').on('submit',function(event){
         }
     });
   
+if ($(window).width() < 1200) {
+    $('#nav-bar').removeClass('fixed-top');
+} 

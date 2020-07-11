@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css" type="text/css"/>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
 
             <header>
                 <div class="container-fluid">
-                    <div class="row d-flex align-items-center fixed-top">
+                    <div class="row d-flex align-items-center fixed-top" id="nav-bar">
                         <div class="col-12 col-md-6">
                             <nav class="navbar navbar-expand-lg navbar-light" id="myNavbar">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,14 +40,14 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item active">
-                                            <p class="nav-link" onclick="topFunction()" id="myBtn">Back Top<i class="fas fa-arrow-up"></i> <span class="sr-only">(current)</span></p>
+                                            <p class="nav-link" onclick="topFunction()" id="myBtn">Home<i class="fas fa-arrow-up arrow"></i> <span class="sr-only">(current)</span></p>
                                         </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <a role="button" class="download" id="myResume">Download my full Resume</a>
+                        <div class="col-12 col-md-6 donwnload-container">
+                            <a  href ="static/resume/Alessio_Centamore_resume.pdf" target="_blank" role="button" class="download" id="myResume">Download my full Resume</a>
                         </div>
                     </div>
                     <div class="sub-header text-center">
@@ -73,22 +73,23 @@
                                         <h3>About Me</h3>
                                         <div class="border"></div>
                                     </div>
-                                    <div class="col-12 col-md-6 social">
-                                        <a href="#" alt="_blank"><span><i class="fab fa-facebook"></i></span></a>
-                                        <a href="#" alt="_blank"><span><i class="fab fa-linkedin"></i></span></a>
-                                        <a href="#" alt="_blank"><span><i class="fab fa-instagram"></i></span></a>
+                                    <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 social" id="about-social">
+                                        <a href="https://www.facebook.com/alessio.centamore.1" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+                                        <a href="https://uk.linkedin.com/in/alessio-centamore-a44bb2177" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
+                                        <a href="https://www.instagram.com/centamorealessio/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row about-me">
                                     <div class="col-12 col-md-6">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        <p>Full Stack Web Developer. Skilled in everything from HTML to Heroku. The capacity for structural and design thinking.
+                                        I'm a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every project.
+                                        I follow form as well as function.
+                                        I'm an excellent communicator who thrives in bright and enthusiastic teams and I'm also a self starter when working solo. </p>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        <p>I know that the aesthetics of effective design combined with application speed, security and reliability combine to create a great user experience.
+                                        I work quickly and effectively in getting things built and working across the stack. 
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -105,17 +106,17 @@
                                         <ol>
                                             <li>
                                                 <div>
-                                                    <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                                    <time>2004 - 2007</time> Liceo Scientifico O.Vannini first 3 years.
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
-                                                    <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                                                    <time>2008 - 2009</time> Liceo Scientifico O.Vannini last 2 years(italian college).
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
-                                                    <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                                                    <time>2019 - July 2020</time> Full stack web developer course at CodeInstitute.
                                                 </div>
                                             </li>
                                             <li>
@@ -125,6 +126,7 @@
                                 </div>
                             </div>
 
+                            <!-- I found this code to display an horizontal time line, I do not if it is the best approach-->
                             <div class="mySlides slide-container time fade">
                                 <div class="row sub-heading">
                                     <div class="col-12 col-md-6">
@@ -137,17 +139,17 @@
                                         <ol>
                                             <li>
                                                 <div>
-                                                    <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                                    <time>Oct 2017 - Oct 2018</time>Head Waiter, Living Ventures Restaurants Ltd,  Manchester.
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
-                                                    <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                                                    <time>Oct 2018 - Jan 2020</time>Assistant General Manger, San Carlo Restaurants, Selfridges in Manchester.
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
-                                                    <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                                                    <time>March 2020 - Present</time>Customer Advisor, Taxi department of Booking.com, Manchester.
                                                 </div>
                                             </li>
                                             <li>
@@ -164,28 +166,36 @@
                                         <div class="border"></div>
                                     </div>
                                 </div>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"><span><i class="fas fa-film"></i></span></th>
-                                            <th scope="col"><span><i class="fas fa-dumbbell"></i></span></th>
-                                            <th scope="col"><span><i class="fas fa-theater-masks"></i></span></th>
-                                            <th scope="col"><span><i class="fas fa-gamepad"></i></span></th>
-                                            <th scope="col"><span><i class="fas fa-headphones"></i></span></th>
-                                            <th scope="col"><span><i class="fas fa-hamburger"></i></span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Movies</td>
-                                            <td>Gym</td>
-                                            <td>Theatre</td>
-                                            <td>Game</td>
-                                            <td>Music</td>
-                                            <td>Cooking</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="row">
+                                    <div class="col-6 col-md-2 text-center hobbies">
+                                        <span><i class="fas fa-film"></i></span>
+                                    </div>
+                                    <div class="col-6 col-md-2 text-center hobbies">
+                                        <span><i class="fas fa-dumbbell"></i></span>
+                                    </div>
+                                    <div class="col-6 col-md-2 text-center hobbies">
+                                        <span><i class="fas fa-theater-masks"></i></span>
+                                    </div>
+                                    <div class="col-6 col-md-2 text-center hobbies">
+                                        <span><i class="fas fa-gamepad"></i></span>
+                                    </div>
+                                    <div class="col-6 col-md-2 text-center hobbies">
+                                        <span><i class="fas fa-headphones"></i></span>
+                                    </div>
+                                    <div class="col-6 col-md-2 text-center hobbies">
+                                        <span><i class="fas fa-hamburger"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 hobbies-header">
+                                        <h5>Movies</h5>
+                                        <h5 class="interests">Gym</h5>
+                                        <h5 class="interests">Theatre</h5>
+                                        <h5 class="interests">Game</h5>
+                                        <h5 class="interests">Music</h5>
+                                        <h5 class="interests">Cooking</h5>
+                                    </div>
+                                </div>
                             </div>        
                         </div>
 
@@ -224,31 +234,31 @@
                         <div class="row progress-section">
                             <div class="col-12">
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">90% complete</div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;"></div>
                                     <span class="progress-type">HTML / HTML5</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">80% complete</div>
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;"></div>
                                     <span class="progress-type">CSS / CSS3</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">60% complete</div>
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;"></div>
                                     <span class="progress-type">JavaScript / jQuery</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;">50% complete</div>
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"></div>
                                     <span class="progress-type">Django3 / Python</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">70% complete</div>
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
                                     <span class="progress-type">SQL / NoSQL</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">60% complete</div>
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;"></div>
                                     <span class="progress-type">Flask / PyMongo</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">90% complete</div>
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;"></div>
                                     <span class="progress-type">Bootstrap4</span>
                                 </div>
                             </div>
@@ -260,9 +270,9 @@
             <section>
                 <div class="container-fluid">
                     <div class="row information">
-                        <div class="col-12 col-md-6 info-container">
+                        <div class="col-12 col-lg-6 info-container">
                             <div class="row">
-                                <div class="col-4 info">
+                                <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 info">
                                     <div class="row sub-heading">
                                         <div class="col-12">
                                             <h3>Quick ID</h3>
@@ -292,9 +302,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 contact-container">
+                        <div class="col-12 col-lg-6 contact-container">
                             <div class="row">
-                                <div class="col-5 contact">
+                                <div class="col-12 col-md-8 offset-md-2 col-lg-5 offset-0 contact">
                                     <div class="row sub-heading">
                                         <div class="col-12 contact-header">
                                             <h3>Contact Me</h3>
@@ -304,10 +314,10 @@
                                     <div class="col-12">
                                         <form onsubmit="return sendMail(this);" id="form">
                                             <div class="row">
-                                                <div class="col-6">
+                                                <div class="col-12 col-md-6">
                                                     <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Name" name="name" required> 
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-12 col-md-6">
                                                     <input type="email" class="form-control" id="Email" aria-describedby="Email" placeholder="Email" name="emailaddress" required>
                                                 </div>
                                             </div>
@@ -358,21 +368,23 @@
         <footer>
             <div class="container">
                 <div class="row footer-links">
-                    <div class="col-12 col-md-6">
-                        <a role="button" href="#" class="download-button">Download my full Resume</a>
+                    <div class="col-12 col-md-6 download-button-container">
+                        <a role="button" href ="static/resume/Alessio_Centamore_resume.pdf" target="_blank" class="download-button">Download my full Resume</a>
                     </div>
-                    <div class="col-12 col-md-6 social">
-                        <a href="#" alt="_blank"><span><i class="fab fa-facebook"></i></span></a>
-                        <a href="#" alt="_blank"><span><i class="fab fa-linkedin"></i></span></a>
-                        <a href="#" alt="_blank"><span><i class="fab fa-instagram"></i></span></a>
+                    <div class="col-12 col-md-6 social" id="bottom-social">
+                        <a href="https://www.facebook.com/alessio.centamore.1" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+                        <a href="https://uk.linkedin.com/in/alessio-centamore-a44bb2177" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
+                        <a href="https://www.instagram.com/centamorealessio/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <p>&copy; Alessio Centamore</p>
-                    </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 offset-md-6 follow"> 
                         <p>Follow me on Social Network</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" id="copyright">
+                        <p>&copy; Alessio Centamore</p>
                     </div>
                 </div>
             </div>
