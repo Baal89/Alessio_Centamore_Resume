@@ -64,3 +64,7 @@ $('#form').on('submit',function(event){
 if ($(window).width() < 1200) {
     $('#nav-bar').removeClass('fixed-top');
 } 
+
+if ($(window).width() < 600) {
+    $('#footer-button').removeClass('d-flex')
+}
